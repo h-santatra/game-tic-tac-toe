@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="titactoe">
+      <div class="container">
+        <div class="header">
+            <img src="/src/logo.jpg" alt="logo" class="icon1">
+          </i>
+          <h2 class="title">Tic Tac Toe</h2>
+          <a type="button" class="icon2" id="gameRules">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 0 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div>
+                Inspiration : This is a weekly OpenDev Mada Challenge , it was
+                to create the Tic Tac Toe Game without frameworks
+              </div>
+              <h3>🎮 Game Rules</h3>
+              <ol>
+                <li>Players: 2 (X and O)</li>
+                <li>Board: 3×3 grid</li>
+                <li>
+                  Objective: Get 3 of your marks in a row (horizontal, vertical,
+                  or diagonal)
+                </li>
+                <li>
+                  Turns: Players take turns placing their mark in an empty cell
+                </li>
+                <li>Win: First player to align 3 marks wins</li>
+                <li>
+                  Draw: If all cells are filled with no winner, it’s a tie
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="info">
+            <h5 class="playerturn">Turn round : X</h5>
+            <button class="resetgame">New Game</button>
+          </div>
+          <div class="gridContainer">
+            <div class="gridDisplay">
+              <button class="case-1"></button>
+              <button class="case-2"></button>
+              <button class="case-3"></button>
+              <button class="case-4"></button>
+              <button class="case-5"></button>
+              <button class="case-6"></button>
+              <button class="case-7"></button>
+              <button class="case-8"></button>
+              <button class="case-9"></button>
+            </div>
+          </div>
+          <div class="score">
+            <div class="xScore">Score X : 0</div>
+            <div class="oScore">Score O : 0</div>
+          </div>
+          <div class="divScore">
+            <button class="resetscore">Reset Score</button>
+          </div>
+          <div class="divwinner">
+            <h5 class="thewinner"></h5>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="about">
+          <div class="socialmedia">
+            <div>Follow me on :</div>
+            <div class="socialicon">
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <div class="copyright">© 2025 All right reserved</div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

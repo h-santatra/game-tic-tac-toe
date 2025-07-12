@@ -1,0 +1,237 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 1.15rem;
+  background-color: #023e8a;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.titactoe {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  flex: 1;
+}
+.gridContainer {
+  display: flex;
+  justify-content: center;
+}
+.gridDisplay {
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+}
+
+button[class*="case-"] {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  font-size: 1.5rem;
+  overflow: hidden; /* Prevent text overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the text */
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.icon1 {
+  position: absolute;
+  left: 0;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.icon2 {
+  position: absolute;
+  right: 0;
+  width: 1.5rem;
+  text-decoration: none;
+  color: aliceblue;
+}
+.icon2:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.title {
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.score {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.divScore {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.resetscore {
+  all: unset;
+  font-size: 1.25rem;
+}
+
+.resetscore {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #333333;
+  color: #b8ccd3;
+}
+.resetscore:hover {
+  color: #000000;
+  cursor: pointer;
+  background-color: #b8ccd3;
+}
+
+.divwinner {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.thewinner {
+  font-size: 2rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #4e4e4e;
+  margin: 15% auto;
+  padding: 50px;
+  width: 80%;
+  line-height: 2;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #48cae4;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #caf0f8;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+ol {
+  padding-left: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+@media all and (min-width: 1024px) {
+  .header {
+    margin: 0 100px;
+  }
+  .info {
+    justify-content: space-around;
+  }
+}
+
+.info > * {
+  all: unset;
+  padding: 0.8rem;
+}
+.playerturn {
+  width: 122px;
+  background-color: #bb9457;
+  border-radius: 8px;
+  text-align: center;
+}
+.resetgame {
+  cursor: pointer;
+  background-color: #0096c7;
+  border-radius: 8px;
+}
+.resetgame:hover {
+  cursor: pointer;
+  background-color: #caf0f8;
+  color: #03045e;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  font-size: 0.9rem;
+  background-color: #554d4d;
+  display: flex;
+  line-height: 2;
+  padding-left: 0.5rem;
+}
+
+.socialmedia {
+  display: flex;
+}
+div > a {
+  text-decoration: none;
+  color: aliceblue;
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+.copyright {
+  width: 100%;
+}
