@@ -152,6 +152,13 @@ button[class*="case-"] {
   line-height: 2;
   border-radius: 20px;
 }
+@media all and (max-width: 768px) {
+  .modal-content {
+    font-size: 0.8rem;
+    padding: 1.25rem;
+    margin: 15% auto;
+  }
+}
 
 /* The Close Button */
 .close {
